@@ -30,14 +30,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 80px;
-  width: 1200px;
   border-bottom: 1px solid #ececec;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -106,18 +104,9 @@ h4 {
 .function {
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
-}
-
-.function .degris {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .function .degris + .degris {
@@ -248,6 +237,12 @@ a {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .doing {
+    display: none;
+  }
+}
+
 .doing {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -256,7 +251,6 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -273,9 +267,6 @@ a {
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -387,17 +378,15 @@ a {
   margin-bottom: 0px;
   padding: 0px;
   list-style-type: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
-.icon {
+.icon1 {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
+  color: #757575;
   fill: #afb1b8;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -405,14 +394,36 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon:hover {
+.icon1:hover {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
 
-.icon:focus {
+.icon1:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
+}
+
+.claints-list .icon1 {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+}
+
+.company-icon {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border-radius: 4px;
+  color: #2196f3;
 }
 
 .page-header {
@@ -972,12 +983,6 @@ a {
   cursor: pointer;
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .page-footer {
   padding-top: 25px;
   margin-top: 94px;
@@ -1074,7 +1079,6 @@ p {
 }
 
 .join-in > .label {
-  display: block;
   margin-top: auto;
   margin-bottom: 21px;
   color: #ffffff;
@@ -1109,7 +1113,6 @@ p {
 
 .fototer-contacts {
   font-style: normal;
-  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1150,7 +1153,6 @@ p {
 }
 
 .subscribe .label {
-  display: block;
   margin-top: auto;
   margin-bottom: 21px;
   color: #ffffff;
@@ -1180,9 +1182,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1200,9 +1199,6 @@ p {
 }
 
 .button-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
   border: none;
   --color1: #ffffff;

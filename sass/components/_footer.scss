@@ -1,5 +1,5 @@
 .footer-container {
-  display: flex;
+  // display: flex;
 }
 .page-footer {
   padding-top: 25px;
@@ -80,7 +80,7 @@ p {
   font-size: 14px;
   line-height: 16px;
   > .label {
-    display: block;
+    // display: block;
     margin-top: auto;
     margin-bottom: 21px;
     color: $pimary-bg-color;
@@ -111,7 +111,7 @@ p {
 }
 .fototer-contacts {
   font-style: normal;
-  display: block;
+  // display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -149,7 +149,7 @@ p {
 }
 .subscribe {
   .label {
-    display: block;
+    // display: block;
     margin-top: auto;
     margin-bottom: 21px;
     color: $pimary-bg-color;
@@ -170,7 +170,7 @@ p {
 .social-item {
   align-items: center;
   margin-right: 10px;
-  display: flex;
+  // display: flex;
   justify-content: center;
   cursor: pointer;
   width: 44px;
@@ -183,7 +183,7 @@ p {
   }
 }
 .button-icon {
-  display: flex;
+  // display: flex;
   padding: 0;
   border: none;
   --color1: #ffffff;
