@@ -131,7 +131,7 @@ a {
   }
 }
 .product {
-  display: flex;
+  // display: flex;
   padding-left: 0px;
   .product-item {
     &:not(:last-child) {
@@ -282,8 +282,8 @@ a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
-  color: $new-accent;
-  fill: $svg-color;
+  // color: $new-accent;
+  // fill: $svg-color;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
@@ -301,17 +301,11 @@ a {
 }
 .company-icon {
   display: flex;
-  // -webkit-box-align: center;
   align-items: center;
   justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   height: 90px;
-  // border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: $main-accent;
+  fill: $new-accent;
 }

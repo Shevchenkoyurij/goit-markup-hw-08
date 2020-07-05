@@ -410,20 +410,22 @@ a {
 }
 
 .company-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   height: 90px;
   border-radius: 4px;
   color: #2196f3;
+  -ms-flex-line-pack: end;
+      align-content: end;
 }
 
 .page-header {
